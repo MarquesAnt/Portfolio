@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antoine Marques - Data Scientist</title>
+    <title>Antoine Marques - Consultant Data Scientist & IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
                     <span class="font-bold text-xl text-blue-700">AM.</span>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="#about" class="hover:text-blue-600 px-3 py-2 text-sm font-medium">Profil</a>
+                    <a href="#about" class="hover:text-blue-600 px-3 py-2 text-sm font-medium hidden sm:block">Profil</a>
                     <a href="#experience" class="hover:text-blue-600 px-3 py-2 text-sm font-medium">Expérience</a>
                     <a href="#projects" class="hover:text-blue-600 px-3 py-2 text-sm font-medium">Projets</a>
                     <a href="#skills" class="hover:text-blue-600 px-3 py-2 text-sm font-medium">Compétences</a>
@@ -25,120 +25,230 @@
         </div>
     </nav>
 
-    <header class="bg-white mt-16 pb-12 pt-20">
+    <header id="about" class="bg-white mt-16 pb-12 pt-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
                 Antoine Marques
             </h1>
             <p class="mt-4 text-xl text-blue-600 font-medium">
-                Data Scientist & Étudiant Ingénieur - Centrale Nantes
+                Consultant Data Scientist & IA
             </p>
-            <p class="mt-4 max-w-2xl mx-auto text-slate-500">
-                Recherche de stage en Data Science orienté Marketing Analytics et Machine Learning appliqué au comportement client.
+            <p class="text-md text-slate-500 font-medium mt-1">Centrale Nantes</p>
+            
+            <p class="mt-6 max-w-3xl mx-auto text-slate-600 leading-relaxed">
+                Ingénieur data scientist avec plus d'un an d'expérience en machine learning, recherche opérationnelle et développement de solutions d'IA. Je combine rigueur technique et sens du business pour accompagner les entreprises dans leur transformation data.
             </p>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="mailto:antoine.marquespro1@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
-                    Me Contacter
+
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:antoine.marquespro1@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
+                    <i class="fas fa-envelope mr-2"></i> Me Contacter
                 </a>
-                <a href="https://github.com/MarquesAnt" target="_blank" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-6 py-3 rounded-lg font-medium transition flex items-center">
+                <a href="https://github.com/MarquesAnt" target="_blank" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-6 py-3 rounded-lg font-medium transition border border-slate-200">
                     <i class="fab fa-github mr-2"></i> GitHub
                 </a>
+                <span class="bg-white text-slate-700 px-6 py-3 rounded-lg font-medium border border-slate-200 cursor-default">
+                    <i class="fas fa-phone mr-2 text-blue-600"></i> (+33) 7 81 36 19 97
+                </span>
             </div>
         </div>
     </header>
 
-    <section id="experience" class="py-16 bg-white border-t border-slate-100">
+    <section id="experience" class="py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-8">Expérience Professionnelle</h2>
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center">
+                <i class="fas fa-briefcase text-blue-600 mr-3 text-2xl"></i> Expérience Professionnelle
+            </h2>
             
-            <div class="mb-10 relative pl-8 border-l-2 border-blue-200">
-                <div class="absolute -left-2 top-0 bg-blue-600 h-4 w-4 rounded-full"></div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
-                    <h3 class="text-xl font-bold text-slate-900">Chercheur Stagiaire</h3>
-                    <span class="text-sm text-slate-500">Mars 2025 - Sept. 2025 | EDF R&D, Palaiseau</span>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 mb-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-600"></div>
+                <div class="flex flex-col md:flex-row justify-between md:items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Chercheur Stagiaire - Optimisation & Data Science</h3>
+                        <p class="text-blue-600 font-medium">EDF R&D <span class="text-slate-400 text-sm font-normal">| Palaiseau, France</span></p>
+                    </div>
+                    <span class="text-sm font-semibold bg-blue-50 text-blue-700 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">
+                        Mars 2025 - Sept. 2025
+                    </span>
                 </div>
-                <p class="text-slate-700 mb-2 font-medium">Optimisation énergétique bas carbone</p>
-                <ul class="list-disc list-inside text-slate-600 space-y-1">
-                    <li>Conception de méthodes d'optimisation bi-niveaux (KKT, MILP).</li>
-                    <li>Développement codebase Python semi-industrielle (OOP, Tests).</li>
-                    <li>Analyse techno-économique pour les équipes stratégiques.</li>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 leading-relaxed">
+                    <li>Développement de <strong>modèles d'optimisation avancés</strong> (KKT, MILP, non-linéaire) avec <strong>Pyomo/CPLEX</strong> pour stratégies de décarbonation.</li>
+                    <li>Analyse de données techniques et socio-économiques pour valider la cohérence des trajectoires.</li>
+                    <li><strong>Industrialisation de code Python</strong> (POO, tests unitaires, CI/CD, documentation).</li>
+                    <li>Présentation des résultats à la direction stratégique et conférence internationale (<strong>PGMO Days</strong>).</li>
                 </ul>
             </div>
 
-            <div class="relative pl-8 border-l-2 border-blue-200">
-                <div class="absolute -left-2 top-0 bg-blue-600 h-4 w-4 rounded-full"></div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
-                    <h3 class="text-xl font-bold text-slate-900">Data Analyst</h3>
-                    <span class="text-sm text-slate-500">Avril 2024 - Août 2024 | Safran, Rép. Tchèque</span>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-600"></div>
+                <div class="flex flex-col md:flex-row justify-between md:items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Data Analyst</h3>
+                        <p class="text-blue-600 font-medium">Safran <span class="text-slate-400 text-sm font-normal">| Plzeň, République Tchèque</span></p>
+                    </div>
+                    <span class="text-sm font-semibold bg-slate-100 text-slate-600 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">
+                        Avril 2024 - Août 2024
+                    </span>
                 </div>
-                <p class="text-slate-700 mb-2 font-medium">Performance industrielle & Dashboards</p>
-                <ul class="list-disc list-inside text-slate-600 space-y-1">
-                    <li>Conception dashboards automatisés (Power BI + SQL).</li>
-                    <li>Analyses statistiques industrielles (Cp, Cpk).</li>
-                    <li>Pilotage projet Problem Solving (8D) en environnement international.</li>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 leading-relaxed">
+                    <li>Conception de <strong>dashboards Power BI</strong> connectés à SQL pour le suivi de performance industrielle.</li>
+                    <li>Analyses statistiques de capabilité process (<strong>Cp, Cpk</strong>) pour l'amélioration qualité.</li>
+                    <li>Pilotage projet Problem Solving (méthodologie <strong>8D</strong>) en équipes pluridisciplinaires.</li>
+                    <li>Collaboration quotidienne en anglais (contexte multiculturel).</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-16 bg-slate-50">
+    <section class="py-16 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-8">Projets Académiques</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg mb-2">Football Prediction (ENS-QRT)</h3>
-                    <p class="text-sm text-slate-600 mb-4">Challenge Data Science sur données réelles.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Machine Learning</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Optimisation</span>
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center">
+                <i class="fas fa-graduation-cap text-blue-600 mr-3 text-2xl"></i> Formation
+            </h2>
+
+            <div class="border-l-2 border-slate-200 pl-8 space-y-10">
+                <div class="relative">
+                    <div class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-white bg-blue-600"></div>
+                    <div class="flex justify-between items-baseline flex-wrap">
+                        <h3 class="text-xl font-bold text-slate-900">École Centrale de Nantes</h3>
+                        <span class="text-sm text-slate-500">2022 - 2025</span>
+                    </div>
+                    <p class="text-lg font-medium text-slate-700 mb-2">Diplôme d'Ingénieur Généraliste</p>
+                    <div class="text-slate-600 space-y-2">
+                        <p><strong class="text-blue-700">Majeure Mathématiques Appliquées & Data Science :</strong></p>
+                        <ul class="list-disc list-inside ml-4 text-sm space-y-1">
+                            <li><strong>ML/DL :</strong> Apprentissage supervisé/non-supervisé, Random Forests, Boosting, PyTorch, TensorFlow.</li>
+                            <li><strong>Stats :</strong> Séries temporelles, modèles Bayésiens, Analyse multivariée.</li>
+                            <li><strong>Recherche Opérationnelle :</strong> Optimisation linéaire/mixte, théorie de la décision.</li>
+                            <li><strong>Modélisation :</strong> Processus stochastiques, Monte Carlo.</li>
+                        </ul>
+                        <p class="text-sm mt-2"><span class="font-semibold">Mineure Finance :</span> Finance d'entreprise et marchés financiers.</p>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg mb-2">Modèles Bayésiens</h3>
-                    <p class="text-sm text-slate-600 mb-4">Analyse de traitement médical (Mélange de lois Poisson, MCMC).</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">BUGS</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">MCMC</span>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                    <h3 class="font-bold text-lg mb-2">Data Mining Industriel</h3>
-                    <p class="text-sm text-slate-600 mb-4">Clustering et PCA sur signaux capteurs UGV.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">PCA</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Signal Processing</span>
-                    </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-white bg-slate-300"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Lycée Kléber, Strasbourg</h3>
+                    <p class="text-slate-600">CPGE PC* (Mathématiques, Physique, Chimie)</p>
+                    <p class="text-sm text-slate-500">2019 - 2022</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-16 bg-white border-t border-slate-100">
+    <section id="projects" class="py-16 bg-slate-50 border-t border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-8">Compétences Techniques</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="p-4 border border-slate-200 rounded text-center">
-                    <span class="block font-bold text-slate-900">Python Ecosystem</span>
-                    <span class="text-sm text-slate-500">NumPy, Pandas, Sklearn, Pyomo</span>
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center">
+                <i class="fas fa-code-branch text-blue-600 mr-3 text-2xl"></i> Projets Académiques
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">Data Challenge Enedis</h3>
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">Deep Learning</span>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Reconstruction de données manquantes sur 69k séries de consommation (DeepCourbogen).
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        Pipeline complet : Preprocessing, Modèles séquentiels, Évaluation.
+                    </p>
                 </div>
-                <div class="p-4 border border-slate-200 rounded text-center">
-                    <span class="block font-bold text-slate-900">Data Viz & BI</span>
-                    <span class="text-sm text-slate-500">Power BI, Streamlit, Matplotlib</span>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">Extreme Value Theory</h3>
+                        <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Finance</span>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Modélisation du risque financier (Value-at-Risk) via la théorie des valeurs extrêmes.
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        Estimateurs MLE, Hill, Bayésiens pour queues de distribution.
+                    </p>
                 </div>
-                <div class="p-4 border border-slate-200 rounded text-center">
-                    <span class="block font-bold text-slate-900">Maths Appliquées</span>
-                    <span class="text-sm text-slate-500">Statistiques Bayésiennes, Optimisation</span>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">Reinforcement Learning</h3>
+                        <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-1 rounded">RL</span>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Stratégies optimales pour Blackjack et Acrobot.
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        Q-Learning, SARSA, Gradient de politique avec TensorFlow.
+                    </p>
                 </div>
-                <div class="p-4 border border-slate-200 rounded text-center">
-                    <span class="block font-bold text-slate-900">Outils</span>
-                    <span class="text-sm text-slate-500">Git, SQL, LaTeX, Excel</span>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold text-lg text-slate-900">Data Mining Industriel</h3>
+                        <span class="text-xs font-bold text-orange-600 bg-orange-50 px-2 py-1 rounded">Industrie</span>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Analyse multivariée de signaux capteurs UGV.
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        Clustering, PCA, identification de patterns explicatifs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 flex items-center">
+                <i class="fas fa-tools text-blue-600 mr-3 text-2xl"></i> Compétences & Outils
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800 border-b pb-2">Stack Technique</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">PyTorch</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">TensorFlow</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Pyomo</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">R</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">SQL</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800 border-b pb-2">Outils & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Git</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Docker</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">CI/CD</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Power BI</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">Streamlit</span>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded text-sm font-medium">LaTeX</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-slate-800 border-b pb-2">Soft Skills & Langues</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Rigueur & Esprit critique</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Communication (PGMO Days)</li>
+                        <li><i class="fas fa-globe text-blue-500 mr-2"></i>Français (Natif)</li>
+                        <li><i class="fas fa-globe text-blue-500 mr-2"></i>Anglais (C1 - Courant)</li>
+                        <li><i class="fas fa-globe text-blue-500 mr-2"></i>Allemand (B1 - Notions)</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
-        <p>© 2026 Antoine Marques. Propulsé par GitHub Pages.</p>
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="mb-2">© 2026 Antoine Marques. Tous droits réservés.</p>
+            <p class="text-sm">Centres d'intérêt : Économie, Lecture, Sport (Football, Basketball, Running)</p>
+        </div>
     </footer>
 
 </body>
